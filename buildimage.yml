@@ -1,0 +1,10 @@
+- hosts: localhost
+  tasks:
+   - docker_image:
+         name: "/root/Desktop/rhel7_5_software_extras/centos-latest.tar"
+         state:  build
+         tag: latest
+
+     vars:
+
+         ansible_python_interpreter: /usr/bin/python36
