@@ -1,0 +1,6 @@
+- hosts: localhost
+  tasks:
+    - service:
+         name: docker
+         state: started
+         enabled: yes
