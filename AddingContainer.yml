@@ -1,0 +1,12 @@
+- hosts: localhost
+  tasks:
+   - name: Creating a docker container
+     docker_container:
+        name: mydata
+        image: firefox:v3  //write image name here
+        state: started
+        tty: true
+        detach: false 
+     vars:
+
+         ansible_python_interpreter: /usr/bin/python36
