@@ -1,0 +1,6 @@
+- hosts: localhost
+  tasks:
+     - name:
+       pip:
+        name: docker.py
+     - command: "yum install docker-ce"
